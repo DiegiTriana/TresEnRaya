@@ -405,7 +405,7 @@ public class Tablero2 extends javax.swing.JFrame {
         }
         
         
-        Tablero tablero = new Tablero(jugador1, jugador2);
+        Tablero3x3 tablero = new Tablero3x3(jugador1, jugador2);
         tablero.setVisible(true);
     }//GEN-LAST:event_lblIniciarMousePressed
 

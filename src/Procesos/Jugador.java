@@ -2,6 +2,8 @@ package Procesos;
 
 public class Jugador {
     private String nombre;
+    private String color; 
+    private String figura;
     private FiguraImagen figuraimagen;
     private int tablero[][];
     
@@ -35,6 +37,22 @@ public class Jugador {
         }
     }
 
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public String getFigura() {
+        return figura;
+    }
+
+    public void setFigura(String figura) {
+        this.figura = figura;
+    }
+        
     public int[][] getTablero() {
         return tablero;
     }

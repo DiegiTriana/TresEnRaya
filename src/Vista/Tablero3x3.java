@@ -4,13 +4,13 @@ import Procesos.Juego;
 import Procesos.Jugador;
 import java.awt.Color;
 
-public class Tablero extends javax.swing.JFrame {
+public class Tablero3x3 extends javax.swing.JFrame {
 
 private Jugador jugador1;
 private Jugador jugador2;
 private Juego juego;
     
-    public Tablero(Jugador jugador1, Jugador jugador2) {
+    public Tablero3x3(Jugador jugador1, Jugador jugador2) {
         this.jugador1 = jugador1;
         this.jugador2 = jugador2;
         init();
