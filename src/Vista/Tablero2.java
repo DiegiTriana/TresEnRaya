@@ -75,11 +75,11 @@ public class Tablero2 extends javax.swing.JFrame {
         cbfiguraJ2 = new javax.swing.JComboBox<>();
         cbfiguraJ1 = new javax.swing.JComboBox<>();
         jLabel3 = new javax.swing.JLabel();
-        jComboBox3 = new javax.swing.JComboBox<>();
-        jComboBox4 = new javax.swing.JComboBox<>();
+        cbColorj1 = new javax.swing.JComboBox<>();
+        cbTamaño = new javax.swing.JComboBox<>();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jComboBox5 = new javax.swing.JComboBox<>();
+        cbColorj2 = new javax.swing.JComboBox<>();
         panelBoton = new javax.swing.JPanel();
         lblIniciar = new javax.swing.JLabel();
 
@@ -213,13 +213,13 @@ public class Tablero2 extends javax.swing.JFrame {
         PanelFondo.add(jLabel3);
         jLabel3.setBounds(250, 140, 220, 40);
 
-        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        PanelFondo.add(jComboBox3);
-        jComboBox3.setBounds(250, 200, 220, 40);
+        cbColorj1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        PanelFondo.add(cbColorj1);
+        cbColorj1.setBounds(250, 200, 220, 40);
 
-        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        PanelFondo.add(jComboBox4);
-        jComboBox4.setBounds(100, 400, 220, 40);
+        cbTamaño.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        PanelFondo.add(cbTamaño);
+        cbTamaño.setBounds(100, 400, 220, 40);
 
         jLabel4.setBackground(new java.awt.Color(255, 255, 255));
         jLabel4.setFont(new java.awt.Font("Malgun Gothic", 1, 18)); // NOI18N
@@ -239,9 +239,9 @@ public class Tablero2 extends javax.swing.JFrame {
         PanelFondo.add(jLabel5);
         jLabel5.setBounds(100, 340, 220, 40);
 
-        jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        PanelFondo.add(jComboBox5);
-        jComboBox5.setBounds(250, 260, 220, 40);
+        cbColorj2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        PanelFondo.add(cbColorj2);
+        cbColorj2.setBounds(250, 260, 220, 40);
 
         panelBoton.setBackground(new java.awt.Color(42, 22, 79));
         panelBoton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 5));
@@ -405,11 +405,11 @@ public class Tablero2 extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel PanelFondo;
+    private javax.swing.JComboBox<String> cbColorj1;
+    private javax.swing.JComboBox<String> cbColorj2;
+    private javax.swing.JComboBox<String> cbTamaño;
     private javax.swing.JComboBox<String> cbfiguraJ1;
     private javax.swing.JComboBox<String> cbfiguraJ2;
-    private javax.swing.JComboBox<String> jComboBox3;
-    private javax.swing.JComboBox<String> jComboBox4;
-    private javax.swing.JComboBox<String> jComboBox5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
