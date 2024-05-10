@@ -4,13 +4,13 @@ import Procesos.Juego;
 import Procesos.Jugador;
 import java.awt.Color;
 
-public class Tablero4x4 extends javax.swing.JFrame {
+public class Tablero5x5 extends javax.swing.JFrame {
 
 private Jugador jugador1;
 private Jugador jugador2;
 private Juego juego;
     
-    public Tablero4x4(Jugador jugador1, Jugador jugador2) {
+    public Tablero5x5(Jugador jugador1, Jugador jugador2) {
         this.jugador1 = jugador1;
         this.jugador2 = jugador2;
         init();
@@ -33,7 +33,7 @@ private Juego juego;
         juego.setCuadroCI(new Color(14,19,43));
         juego.setColorTablero(new Color(239,180,255));
         juego.setLocation(45, 150);
-        juego.crearTablero4x4();
+        juego.crearTablero5x5();
         juego.setVisible(true);
         
         panelFondo.add(juego);
@@ -75,7 +75,7 @@ private Juego juego;
             }
         });
         panelFondo.add(lblCierre);
-        lblCierre.setBounds(410, 0, 40, 30);
+        lblCierre.setBounds(480, 0, 40, 30);
 
         lblJugador2.setBackground(new java.awt.Color(255, 255, 255));
         lblJugador2.setFont(new java.awt.Font("Century", 1, 12)); // NOI18N
@@ -84,7 +84,7 @@ private Juego juego;
         lblJugador2.setText("NAME");
         lblJugador2.setOpaque(true);
         panelFondo.add(lblJugador2);
-        lblJugador2.setBounds(310, 60, 90, 30);
+        lblJugador2.setBounds(360, 60, 90, 30);
 
         lblJugador1.setBackground(new java.awt.Color(255, 255, 255));
         lblJugador1.setFont(new java.awt.Font("Century", 1, 12)); // NOI18N
@@ -93,34 +93,34 @@ private Juego juego;
         lblJugador1.setText("NAME");
         lblJugador1.setOpaque(true);
         panelFondo.add(lblJugador1);
-        lblJugador1.setBounds(30, 60, 90, 30);
+        lblJugador1.setBounds(80, 60, 90, 30);
 
         jLabel1.setFont(new java.awt.Font("Algerian", 1, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("-");
         panelFondo.add(jLabel1);
-        jLabel1.setBounds(190, 50, 40, 50);
+        jLabel1.setBounds(240, 50, 40, 50);
 
         lblpuntajeJ2.setFont(new java.awt.Font("Algerian", 1, 36)); // NOI18N
         lblpuntajeJ2.setForeground(new java.awt.Color(255, 255, 255));
         lblpuntajeJ2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblpuntajeJ2.setText("0");
         panelFondo.add(lblpuntajeJ2);
-        lblpuntajeJ2.setBounds(250, 50, 40, 50);
+        lblpuntajeJ2.setBounds(300, 50, 40, 50);
 
         lblpuntajeJ1.setFont(new java.awt.Font("Algerian", 1, 36)); // NOI18N
         lblpuntajeJ1.setForeground(new java.awt.Color(255, 255, 255));
         lblpuntajeJ1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblpuntajeJ1.setText("0");
         panelFondo.add(lblpuntajeJ1);
-        lblpuntajeJ1.setBounds(140, 50, 40, 50);
+        lblpuntajeJ1.setBounds(190, 50, 40, 50);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(panelFondo, javax.swing.GroupLayout.DEFAULT_SIZE, 435, Short.MAX_VALUE)
+            .addComponent(panelFondo, javax.swing.GroupLayout.DEFAULT_SIZE, 518, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

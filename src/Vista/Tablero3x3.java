@@ -33,7 +33,7 @@ private Juego juego;
         juego.setCuadroCI(new Color(14,19,43));
         juego.setColorTablero(new Color(239,180,255));
         juego.setLocation(40, 150);
-        juego.crearTablero();
+        juego.crearTablero3x3();
         juego.setVisible(true);
         
         panelFondo.add(juego);

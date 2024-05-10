@@ -40,14 +40,7 @@ public class Tablero2 extends javax.swing.JFrame {
         
         cbfiguraJ1.setRenderer(mRender);
         cbfiguraJ2.setRenderer(mRender);
-        
-        cbColorj1.addItem("Azul");
-        cbColorj1.addItem("Verde");
-        
-        cbColorj2.addItem("Rojo");
-        cbColorj2.addItem("Amarillo");
-        
-        
+
         cbTamaño.addItem("3x3");
         cbTamaño.addItem("4x4");
         cbTamaño.addItem("5x5");
@@ -83,12 +76,9 @@ public class Tablero2 extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         cbfiguraJ2 = new javax.swing.JComboBox<>();
         cbfiguraJ1 = new javax.swing.JComboBox<>();
-        jLabel3 = new javax.swing.JLabel();
-        cbColorj1 = new javax.swing.JComboBox<>();
         cbTamaño = new javax.swing.JComboBox<>();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        cbColorj2 = new javax.swing.JComboBox<>();
         panelBoton = new javax.swing.JPanel();
         lblIniciar = new javax.swing.JLabel();
 
@@ -119,7 +109,7 @@ public class Tablero2 extends javax.swing.JFrame {
             }
         });
         PanelFondo.add(lblCierre);
-        lblCierre.setBounds(690, 0, 40, 30);
+        lblCierre.setBounds(470, 0, 40, 30);
 
         lblTitulo.setBackground(new java.awt.Color(255, 255, 255));
         lblTitulo.setFont(new java.awt.Font("Showcard Gothic", 3, 36)); // NOI18N
@@ -127,7 +117,7 @@ public class Tablero2 extends javax.swing.JFrame {
         lblTitulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTitulo.setText("Tres en raya");
         PanelFondo.add(lblTitulo);
-        lblTitulo.setBounds(0, 50, 720, 40);
+        lblTitulo.setBounds(0, 50, 500, 40);
 
         txtJugador2.setBackground(new java.awt.Color(255, 255, 255));
         txtJugador2.setFont(new java.awt.Font("Dubai", 1, 36)); // NOI18N
@@ -205,28 +195,16 @@ public class Tablero2 extends javax.swing.JFrame {
         jLabel1.setText("Figura");
         jLabel1.setOpaque(true);
         PanelFondo.add(jLabel1);
-        jLabel1.setBounds(490, 140, 220, 40);
+        jLabel1.setBounds(250, 140, 220, 40);
 
         PanelFondo.add(cbfiguraJ2);
-        cbfiguraJ2.setBounds(490, 260, 220, 40);
+        cbfiguraJ2.setBounds(250, 260, 220, 40);
 
         PanelFondo.add(cbfiguraJ1);
-        cbfiguraJ1.setBounds(490, 200, 220, 40);
-
-        jLabel3.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel3.setFont(new java.awt.Font("Malgun Gothic", 1, 18)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("Color");
-        jLabel3.setOpaque(true);
-        PanelFondo.add(jLabel3);
-        jLabel3.setBounds(250, 140, 220, 40);
-
-        PanelFondo.add(cbColorj1);
-        cbColorj1.setBounds(250, 200, 220, 40);
+        cbfiguraJ1.setBounds(250, 200, 220, 40);
 
         PanelFondo.add(cbTamaño);
-        cbTamaño.setBounds(100, 400, 220, 40);
+        cbTamaño.setBounds(10, 380, 220, 40);
 
         jLabel4.setBackground(new java.awt.Color(255, 255, 255));
         jLabel4.setFont(new java.awt.Font("Malgun Gothic", 1, 18)); // NOI18N
@@ -244,10 +222,7 @@ public class Tablero2 extends javax.swing.JFrame {
         jLabel5.setText("Tamaño del tablero");
         jLabel5.setOpaque(true);
         PanelFondo.add(jLabel5);
-        jLabel5.setBounds(100, 340, 220, 40);
-
-        PanelFondo.add(cbColorj2);
-        cbColorj2.setBounds(250, 260, 220, 40);
+        jLabel5.setBounds(10, 320, 220, 40);
 
         panelBoton.setBackground(new java.awt.Color(42, 22, 79));
         panelBoton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 5));
@@ -272,7 +247,7 @@ public class Tablero2 extends javax.swing.JFrame {
         panelBoton.setLayout(panelBotonLayout);
         panelBotonLayout.setHorizontalGroup(
             panelBotonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(lblIniciar, javax.swing.GroupLayout.DEFAULT_SIZE, 230, Short.MAX_VALUE)
+            .addComponent(lblIniciar, javax.swing.GroupLayout.DEFAULT_SIZE, 210, Short.MAX_VALUE)
         );
         panelBotonLayout.setVerticalGroup(
             panelBotonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -280,13 +255,13 @@ public class Tablero2 extends javax.swing.JFrame {
         );
 
         PanelFondo.add(panelBoton);
-        panelBoton.setBounds(410, 340, 240, 100);
+        panelBoton.setBounds(250, 320, 220, 100);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(PanelFondo, javax.swing.GroupLayout.DEFAULT_SIZE, 720, Short.MAX_VALUE)
+            .addComponent(PanelFondo, javax.swing.GroupLayout.PREFERRED_SIZE, 496, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -404,20 +379,28 @@ public class Tablero2 extends javax.swing.JFrame {
             jugador2.setNombre(txtJugador2.getText());
         }
         
+        String tipoJuego = cbTamaño.getSelectedItem().toString();
+        if(tipoJuego == "3x3"){
+            Tablero3x3 tablero = new Tablero3x3(jugador1, jugador2);
+            tablero.setVisible(true);
+        }
+        if(tipoJuego == "4x4"){
+            Tablero4x4 tablero = new Tablero4x4(jugador1, jugador2);
+            tablero.setVisible(true);
+        }
+        if(tipoJuego == "5x5"){
+            Tablero5x5 tablero = new Tablero5x5(jugador1, jugador2);
+            tablero.setVisible(true);
+        }
         
-        Tablero3x3 tablero = new Tablero3x3(jugador1, jugador2);
-        tablero.setVisible(true);
     }//GEN-LAST:event_lblIniciarMousePressed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel PanelFondo;
-    private javax.swing.JComboBox<String> cbColorj1;
-    private javax.swing.JComboBox<String> cbColorj2;
     private javax.swing.JComboBox<String> cbTamaño;
     private javax.swing.JComboBox<String> cbfiguraJ1;
     private javax.swing.JComboBox<String> cbfiguraJ2;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel lblCierre;
