@@ -44,6 +44,12 @@ public class Juego extends JPanel {
         crearCruadoCI();
     }
     
+    public void crearTablero4x4(){
+        setLayout(null);
+        setSize(anchoCI*4+margen*5,alturaCI*4+margen*5);
+        setBackground(colorTablero);
+        crearCruadoCI4x4();
+    }
     
     
     private void crearCruadoCI(){
@@ -56,8 +62,27 @@ public class Juego extends JPanel {
                 Cuadro cuadro = new Cuadro(anchoCI, alturaCI, cuadroCI);
                 cuadro.setCursor(new Cursor(Cursor.HAND_CURSOR));
                 cuadro.setLocation(x,y);
-                cuadro.setI(i);
-                cuadro.setJ(j);
+                add(cuadro);
+                cuadros.add(cuadro);
+                crearEventosCuadros(cuadro);
+                
+                x+= (anchoCI+margen);
+                
+            }
+            y+= (alturaCI+margen);
+        }
+    }
+    
+     private void crearCruadoCI4x4(){
+        int x = margen;
+        int y = margen;
+        
+        for (int i = 0; i < 4; i++){
+            x = margen;
+            for (int j = 0; j < 4; j++){
+                Cuadro cuadro = new Cuadro(anchoCI, alturaCI, cuadroCI);
+                cuadro.setCursor(new Cursor(Cursor.HAND_CURSOR));
+                cuadro.setLocation(x,y);
                 add(cuadro);
                 cuadros.add(cuadro);
                 crearEventosCuadros(cuadro);
