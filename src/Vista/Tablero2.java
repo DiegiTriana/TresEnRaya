@@ -41,7 +41,16 @@ public class Tablero2 extends javax.swing.JFrame {
         cbfiguraJ1.setRenderer(mRender);
         cbfiguraJ2.setRenderer(mRender);
         
+        cbColorj1.addItem("Azul");
+        cbColorj1.addItem("Verde");
         
+        cbColorj2.addItem("Rojo");
+        cbColorj2.addItem("Amarillo");
+        
+        
+        cbTamaño.addItem("3x3");
+        cbTamaño.addItem("4x4");
+        cbTamaño.addItem("5x5");
         
     }
     public ImageIcon getIcono(String path){
@@ -213,11 +222,9 @@ public class Tablero2 extends javax.swing.JFrame {
         PanelFondo.add(jLabel3);
         jLabel3.setBounds(250, 140, 220, 40);
 
-        cbColorj1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         PanelFondo.add(cbColorj1);
         cbColorj1.setBounds(250, 200, 220, 40);
 
-        cbTamaño.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         PanelFondo.add(cbTamaño);
         cbTamaño.setBounds(100, 400, 220, 40);
 
@@ -239,7 +246,6 @@ public class Tablero2 extends javax.swing.JFrame {
         PanelFondo.add(jLabel5);
         jLabel5.setBounds(100, 340, 220, 40);
 
-        cbColorj2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         PanelFondo.add(cbColorj2);
         cbColorj2.setBounds(250, 260, 220, 40);
 
